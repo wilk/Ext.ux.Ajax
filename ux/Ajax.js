@@ -2,7 +2,7 @@
  * @class Ext.ux.Ajax
  * @author Vincenzo Ferrari <wilk3ert@gmail.com>
  *
- * A revised Ajax class for ExtJS and Sencha Touch.
+ * A revisited Ajax class for ExtJS and Sencha Touch.
  * It works with javascript promises (Ext.ux.Deferred).
  *
  * @singleton
@@ -20,6 +20,10 @@ Ext.define ('Ext.ux.Ajax', {
 	
 	/**
 	 * @method makeDeferred
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams Extra params of the request
+	 * @param {Object} opts Other extra params of the request
+	 * @return {Ext.ux.Deferred} A new promise
 	 * @private
 	 */
 	makeDeferred: function (url, extraParams, opts) {
@@ -47,8 +51,9 @@ Ext.define ('Ext.ux.Ajax', {
 	
 	/**
 	 * @method get
-	 * @param url {String}
-	 * @param extraParams {Object} (optional)
+	 * Makes a new Ajax request, with 'GET' method
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
 	get: function (url, extraParams) {
@@ -57,8 +62,9 @@ Ext.define ('Ext.ux.Ajax', {
 	
 	/**
 	 * @method post
-	 * @param url {String}
-	 * @param extraParams {Object} (optional)
+	 * Makes a new Ajax request, with 'POST' method
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
 	post: function (url, extraParams) {
@@ -67,8 +73,9 @@ Ext.define ('Ext.ux.Ajax', {
 	
 	/**
 	 * @method request
-	 * @param url {String}
-	 * @param extraParams {Object} (optional)
+	 * Makes a new Ajax request and returns a promise
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
 	request: function (url, extraParams) {
