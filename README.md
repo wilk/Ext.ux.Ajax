@@ -9,7 +9,7 @@ It works with javascript promises.
 [`Ext.ux.Deferred`](https://github.com/wilk/Ext.ux.Deferred)
 
 ## Problem
-`Ext.Ajax` singleton is uncomfortable because it puts you in the condition to make [Pyramids of Doom][http://tritarget.org/blog/2012/11/28/the-pyramid-of-doom-a-javascript-style-trap/] and this is very annoying, indeed =(
+`Ext.Ajax` singleton is uncomfortable because it puts you in the condition to make [Pyramids of Doom](http://tritarget.org/blog/2012/11/28/the-pyramid-of-doom-a-javascript-style-trap/) and this is very annoying, indeed =(
 Let me show you an example:
 
 ```javascript
