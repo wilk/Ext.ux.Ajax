@@ -2,7 +2,11 @@
 
 A revisited Ajax class for ExtJS and Sencha Touch.
 
-It works with javascript promises (Ext.ux.Deferred).
+It works with javascript promises.
+
+## Dependencies
+
+[`Ext.ux.Deferred`](https://github.com/wilk/Ext.ux.Deferred)
 
 ## Problem
 `Ext.Ajax` singleton is uncomfortable because it puts you in the condition to make [Pyramids of Doom][http://tritarget.org/blog/2012/11/28/the-pyramid-of-doom-a-javascript-style-trap/] and this is very annoying, indeed =(
@@ -44,10 +48,10 @@ Ext.ux.Ajax
 	}, errorHandler);
 ```
 
-`Ext.ux.Ajax` works with `Ext.ux.Deferred` and each request returns a new promise.
+`Ext.ux.Ajax` works with [`Ext.ux.Deferred`](https://github.com/wilk/Ext.ux.Deferred) and each request returns a new promise.
 It allows to handle different requests with ease and joy!
 
-## No boilerplates
+## No more boilerplates
 And what about boilerplates?
 
 ```javascript
@@ -79,6 +83,17 @@ Ext.ux.Ajax
 	.fail (errorHandler);
 ```
 
+## Sync the async!
+With `Ext.ux.Deferred` we can synchronize different AJAX requests in one single shot:
+
+```javascript
+Ext.ux.Deferred
+	.when (Ext.ux.Ajax.get ('data1.json'), Ext.ux.Ajax.get ('data2.json'), Ext.ux.Ajax.get ('data3.json'))
+	.then (function (data1, data2, data3) {
+		// have fun with your data =)
+	}, errorHandler);
+```
+
 ## Usage
 Load `Ext.ux.Ajax` via `Ext.require`:
 
@@ -98,9 +113,6 @@ Ext.ux.Ajax
 	.done (successHandler)
 	.fail (errorHandler);
 ```
-
-## Run the demo
-Go to *http://localhost/Ext.ux.Ajax/demo* and play it!
 
 ## Documentation
 You can build the documentation (like ExtJS Docs) with [**jsduck**](https://github.com/senchalabs/jsduck):
