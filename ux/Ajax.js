@@ -72,6 +72,39 @@ Ext.define ('Ext.ux.Ajax', {
 	} ,
 	
 	/**
+	 * @method delete
+	 * Makes a new Ajax request, with 'DELETE' method
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams (optional) Extra params of the request
+	 * @return {Ext.ux.Deferred} A new promise
+	 */
+	delete: function (url, extraParams) {
+		return this.makeDeferred (url, extraParams, {method: 'DELETE'});
+	} ,
+	
+	/**
+	 * @method put
+	 * Makes a new Ajax request, with 'PUT' method
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams (optional) Extra params of the request
+	 * @return {Ext.ux.Deferred} A new promise
+	 */
+	put: function (url, extraParams) {
+		return this.makeDeferred (url, extraParams, {method: 'PUT'});
+	} ,
+	
+	/**
+	 * @method head
+	 * Makes a new Ajax request, with 'HEAD' method
+	 * @param {String} url Url of the request
+	 * @param {Object} extraParams (optional) Extra params of the request
+	 * @return {Ext.ux.Deferred} A new promise
+	 */
+	head: function (url, extraParams) {
+		return this.makeDeferred (url, extraParams, {method: 'HEAD'});
+	} ,
+	
+	/**
 	 * @method request
 	 * Makes a new Ajax request and returns a promise
 	 * @param {String} url Url of the request
