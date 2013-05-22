@@ -78,7 +78,11 @@ Ext.ux.Ajax
 
 // get/post methods!
 Ext.ux.Ajax
-	.get ('data.json') // .post ('data.json')
+	.get ('data.json')
+	//.post ('data.json')
+	//.put ('data.json')
+	//.delete ('data.json')
+	//.head ('data.json')
 	.done (successHandler)
 	.fail (errorHandler);
 ```
