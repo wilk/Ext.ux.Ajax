@@ -36,7 +36,7 @@ Ext.Ajax.request ({
 
 Uh, it's really hard to reach the top of the Pyramid, innit?
 
-Let's see what can we do with a cool jetpack: let me introduce you the new `Ext.ux.Ajax`:
+Let's see what we can do with a cool jetpack: let me introduce you the new `Ext.ux.Ajax`:
 
 ```javascript
 Ext.ux.Ajax
@@ -49,7 +49,7 @@ Ext.ux.Ajax
 ```
 
 `Ext.ux.Ajax` works with [`Ext.ux.Deferred`](https://github.com/wilk/Ext.ux.Deferred) and each request returns a new promise.
-It allows to handle different requests with ease and joy!
+It easily allows to handle different requests with joy!
 
 ## No more boilerplates
 And what about boilerplates?
@@ -63,7 +63,7 @@ Ext.Ajax.request ({
 });
 ```
 
-Why have I to repeat {url: 'an/url', method: 'GET/POST'} every time?
+Why should I repeat {url: 'an/url', method: 'GET/POST'} every time?
 Say hello to the new syntax:
 
 ```javascript
