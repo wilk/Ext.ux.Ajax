@@ -56,7 +56,7 @@ Ext.define ('Ext.ux.Ajax', {
 	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
-	get: function (url, extraParams) {
+	'get': function (url, extraParams) {
 		return this.makeDeferred (url, extraParams, {method: 'GET'});
 	} ,
 	
@@ -67,7 +67,7 @@ Ext.define ('Ext.ux.Ajax', {
 	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
-	post: function (url, extraParams) {
+	'post': function (url, extraParams) {
 		return this.makeDeferred (url, extraParams, {method: 'POST'});
 	} ,
 	
@@ -78,7 +78,7 @@ Ext.define ('Ext.ux.Ajax', {
 	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
-	delete: function (url, extraParams) {
+	'delete': function (url, extraParams) {
 		return this.makeDeferred (url, extraParams, {method: 'DELETE'});
 	} ,
 	
@@ -89,7 +89,7 @@ Ext.define ('Ext.ux.Ajax', {
 	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
-	put: function (url, extraParams) {
+	'put': function (url, extraParams) {
 		return this.makeDeferred (url, extraParams, {method: 'PUT'});
 	} ,
 	
@@ -100,7 +100,7 @@ Ext.define ('Ext.ux.Ajax', {
 	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
-	head: function (url, extraParams) {
+	'head': function (url, extraParams) {
 		return this.makeDeferred (url, extraParams, {method: 'HEAD'});
 	} ,
 	
@@ -111,7 +111,7 @@ Ext.define ('Ext.ux.Ajax', {
 	 * @param {Object} extraParams (optional) Extra params of the request
 	 * @return {Ext.ux.Deferred} A new promise
 	 */
-	request: function (url, extraParams) {
+	'request': function (url, extraParams) {
 		return this.makeDeferred (url, extraParams);
 	}
 });
