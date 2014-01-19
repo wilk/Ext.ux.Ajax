@@ -117,8 +117,11 @@ Let's setup the **Ext.Loader** to require the right file:
 Ext.Loader.setConfig ({
 	enabled: true ,
 	paths: {
-		'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.js'
-		// or the minified one: 'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.min.js'
+		'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.js' ,
+		// or the minified one: 'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.min.js' ,
+		// Require the Ext.ux.Deferred dependency
+		'Ext.ux.Deferred': 'bower_components/ext.ux.deferred/Deferred.js'
+		// or the minified one: 'Ext.ux.Deferred': 'bower_components/ext.ux.deferred/Deferred.min.js'
 	}
 });
 
