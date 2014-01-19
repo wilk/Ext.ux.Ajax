@@ -1,0 +1,32 @@
+{
+  "name": "Ext.ux.Ajax",
+  "version": "0.0.0",
+  "description": "A revisited implementation with Ext.ux.Deferred of the well known Ext.Ajax singleton.",
+  "main": "Ajax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilk/Ext.ux.Ajax.git"
+  },
+  "keywords": [
+    "ajax",
+    "extjs",
+    "senchatouch",
+    "defer",
+    "promise"
+  ],
+  "author": "Vincenzo <wilk3ert@gmail.com> (Wilk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilk/Ext.ux.Ajax/issues"
+  },
+  "homepage": "https://github.com/wilk/Ext.ux.Ajax",
+  "dependencies": {
+    "load-grunt-tasks": "~0.2.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.3.0",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}
