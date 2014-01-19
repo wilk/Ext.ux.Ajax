@@ -1,0 +1,38 @@
+{
+  "name": "Ext.ux.Ajax",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wilk/Ext.ux.Ajax",
+  "authors": [
+    "Vincenzo (Wilk) Ferrari <wilk3ert@gmail.com>"
+  ],
+  "description": "A revisited implementation with Ext.ux.Deferred of the well known Ext.Ajax singleton",
+  "main": [
+    "Ajax.js",
+    "Ajax.min.js"
+  ],
+  "keywords": [
+    "senchatouch",
+    "extjs",
+    "ux",
+    "ajax",
+    "defer",
+    "promise"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo",
+    "ux",
+    "**/*.*~",
+    "Gruntfile.js",
+    "bower.json",
+    "package.json",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ext.ux.deferred": "~0.0.5"
+  }
+}
