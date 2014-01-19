@@ -98,6 +98,33 @@ Ext.ux.Deferred
 	}, errorHandler);
 ```
 
+## Install via Bower
+First of all, install [**Bower**](http://bower.io/).
+
+Then install `Ext.ux.Ajax`:
+
+```bash
+$ bower install ext.ux.ajax
+```
+
+Now, you got the extension at the following path: *YOUR_PROJECT_PATH/bower_components/ext.ux.ajax/*
+
+It contains **Ajax.js** and a minified version **Ajax.min.js**.
+
+Let's setup the **Ext.Loader** to require the right file:
+
+```javascript
+Ext.Loader.setConfig ({
+	enabled: true ,
+	paths: {
+		'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.js'
+		// or the minified one: 'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.min.js'
+	}
+});
+
+Ext.require (['Ext.ux.Ajax']);
+```
+
 ## Usage
 Load `Ext.ux.Ajax` via `Ext.require`:
 
