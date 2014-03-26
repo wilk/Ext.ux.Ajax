@@ -1,14 +1,13 @@
 {
   "name": "Ext.ux.Ajax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/wilk/Ext.ux.Ajax",
   "authors": [
     "Vincenzo (Wilk) Ferrari <wilk3ert@gmail.com>"
   ],
   "description": "A revisited implementation with Ext.ux.Deferred of the well known Ext.Ajax singleton",
   "main": [
-    "Ajax.js",
-    "Ajax.min.js"
+    "Ajax.js"
   ],
   "keywords": [
     "senchatouch",
