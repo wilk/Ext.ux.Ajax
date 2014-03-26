@@ -109,7 +109,7 @@ $ bower install ext.ux.ajax
 
 Now, you got the extension at the following path: *YOUR_PROJECT_PATH/bower_components/ext.ux.ajax/*
 
-It contains **Ajax.js** and a minified version **Ajax.min.js**.
+It contains **Ajax.js**.
 
 Let's setup the **Ext.Loader** to require the right file:
 
@@ -118,10 +118,8 @@ Ext.Loader.setConfig ({
 	enabled: true ,
 	paths: {
 		'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.js' ,
-		// or the minified one: 'Ext.ux.Ajax': 'bower_components/ext.ux.ajax/Ajax.min.js' ,
 		// Require the Ext.ux.Deferred dependency
 		'Ext.ux.Deferred': 'bower_components/ext.ux.deferred/Deferred.js'
-		// or the minified one: 'Ext.ux.Deferred': 'bower_components/ext.ux.deferred/Deferred.min.js'
 	}
 });
 
@@ -129,16 +127,6 @@ Ext.require (['Ext.ux.Ajax']);
 ```
 
 ## Usage
-Load `Ext.ux.Ajax` via `Ext.require`:
-
-```javascript
-Ext.Loader.setConfig ({
-	enabled: true
-});
-
-Ext.require (['Ext.ux.Ajax']);
-```
-
 Now, you are ready to use them in your code as follows:
 
 ```javascript
