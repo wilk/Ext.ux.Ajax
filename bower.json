@@ -32,6 +32,6 @@
     "tests"
   ],
   "dependencies": {
-    "ext.ux.deferred": "~0.0.5"
+    "ext.ux.deferred": "~0.0.6"
   }
 }
