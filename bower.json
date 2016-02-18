@@ -32,6 +32,6 @@
     "tests"
   ],
   "dependencies": {
-    "ext.ux.deferred": "~0.0.6"
+    "Ext.ux.Deferred": "https://github.com/wilk/Ext.ux.Deferred.git#v1.0.0"
   }
 }
