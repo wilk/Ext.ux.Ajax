@@ -19,10 +19,10 @@
     "promise"
   ],
   "author": "Vincenzo <wilk3ert@gmail.com> (Wilk)",
-   "contributors": [{
-     "name": "Ivan Augusto",
-     "email": "ivan@naesquina.com.br"
-   }],
+  "contributors": [{
+   "name": "Ivan Augusto",
+   "email": "ivan@naesquina.com.br"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ivan-augusto/Ext.ux.Ajax/issues"
