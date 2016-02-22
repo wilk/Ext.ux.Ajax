@@ -4,7 +4,7 @@
   "homepage": "https://github.com/ivan-augusto/Ext.ux.Ajax",
   "authors": [
     "Vincenzo (Wilk) Ferrari <wilk3ert@gmail.com>",
-    "Ivan Augusto <ivan@naesquina.com.br>",
+    "Ivan Augusto <ivan@naesquina.com.br>"
   ],
   "description": "Implementação revisada do Ext.ux.Deferred.",
   "main": [
