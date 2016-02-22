@@ -1,20 +1,23 @@
 {
   "name": "Ext.ux.Ajax",
-  "version": "0.0.2",
-  "homepage": "https://github.com/wilk/Ext.ux.Ajax",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ivan-augusto/Ext.ux.Ajax",
   "authors": [
-    "Vincenzo (Wilk) Ferrari <wilk3ert@gmail.com>"
+    "Vincenzo (Wilk) Ferrari <wilk3ert@gmail.com>",
+    "Ivan Augusto <ivan@naesquina.com.br>",
   ],
-  "description": "A revisited implementation with Ext.ux.Deferred of the well known Ext.Ajax singleton",
+  "description": "Implementação revisada do Ext.ux.Deferred.",
   "main": [
     "Ajax.js"
   ],
   "keywords": [
+    "sencha",
     "senchatouch",
     "extjs",
     "ux",
     "ajax",
     "defer",
+    "deferred",
     "promise"
   ],
   "license": "MIT",
