@@ -1,5 +1,7 @@
 # Ext.ux.Ajax
 
+# This library is no longer mainteined.
+
 A revisited Ajax class for ExtJS and Sencha Touch.
 
 It works with javascript promises.
