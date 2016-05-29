@@ -46,7 +46,7 @@ Ext.define ('Ext.ux.Ajax', {
 		
 		this.connection.request (extraParams);
 		
-		return dfd;
+		return dfd.promise();
 	} ,
 	
 	/**
